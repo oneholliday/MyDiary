@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/back"
+    tools:context="activities.EditActivity">
+
+    <include
+        android:id="@+id/bottomPanelEdit"
+        layout="@layout/bottom_panel_edit"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <EditText
+        android:id="@+id/titleTextEdit"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/back"
+        android:ems="10"
+        android:hint="@string/title"
+        android:textAlignment="center"
+        android:textColor="@color/whitish"
+        android:textColorHint="@color/waterBitch"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/categoryTextEdit"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/back"
+        android:ems="10"
+        android:hint="@string/category"
+        android:textAlignment="center"
+        android:textColor="@color/whitish"
+        android:textColorHint="@color/waterBitch"
+        app:layout_constraintTop_toBottomOf="@+id/titleTextEdit" />
+
+    <TextView
+        android:id="@+id/dataText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/whitish"
+        app:layout_constraintTop_toBottomOf="@+id/categoryTextEdit"
+        android:textAlignment="center"
+        android:text="DATA ERR"
+        android:textSize="20dp"/>
+
+    <EditText
+        android:id="@+id/contentTextEdit"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="@dimen/bottom_panel"
+        android:background="@color/back"
+        android:ems="10"
+        android:gravity="clip_horizontal"
+        android:hint="@string/content"
+        android:padding="10dp"
+        android:textColor="@color/whitish"
+        android:textColorHint="@color/waterBitch"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/dataText"
+        app:layout_constraintStart_toStartOf="@+id/dataText"
+        app:layout_constraintTop_toBottomOf="@+id/dataText" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

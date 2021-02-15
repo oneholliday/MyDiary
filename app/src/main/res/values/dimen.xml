@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="dim_header_menu">90dp</dimen>
+    <dimen name="dim_av_header_menu">50dp</dimen>
+    <dimen name="bottom_panel">50dp</dimen>
+    <dimen name="button_on_bottom">40dp</dimen>
+</resources>

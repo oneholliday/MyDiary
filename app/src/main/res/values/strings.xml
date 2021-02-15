@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">MyDiary0.2</string>
+    <string name="startText">
+        Это, своего рода записная книжка, в которой собраны
+        самые разнообразные материалы из моей жизни.
+        Надеюсь я все таки добавил на неё пароль</string>
+    <string name="james_holliday">James Holliday</string>
+    <string name="diary">Дневник</string>
+    <string name="thoughts">Мысли</string>
+    <string name="letters">Письма</string>
+    <string name="books">Книги</string>
+    <string name="title">Заголовок</string>
+    <string name="category">Категория</string>
+    <string name="content">Запись</string>
+    <string name="data">Дата</string>
+    <string name="small_content">Краткое описание</string>
+    <string name="cleanAllContent">Очистить все записи</string>
+</resources>

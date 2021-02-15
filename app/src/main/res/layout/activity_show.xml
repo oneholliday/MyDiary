@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="activities.ShowActivity"
+    android:background="@color/back">
+
+    <TextView
+        android:id="@+id/tvTittleShow"
+        style="@style/TitleShow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title"
+        android:layout_margin="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvDataShow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="@string/data"
+        android:textStyle="bold"
+        android:textColor="@color/gold"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTittleShow" />
+
+    <TextView
+        android:id="@+id/tvCategoryShow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="@string/category"
+        android:textStyle="bold"
+        android:textColor="@color/gold"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDataShow" />
+
+    <TextView
+        android:id="@+id/tvContentShow"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="@dimen/bottom_panel"
+        android:padding="10dp"
+        android:text="@string/content"
+        android:textAlignment="textStart"
+        android:textColor="@color/gold"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/navigate_layout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvCategoryShow" />
+
+    <include
+        android:id="@+id/navigate_layout"
+        layout="@layout/navigate_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <include
+        android:id="@+id/bottomPanelShow"
+        layout="@layout/bottom_panel_show"
+        app:layout_constraintBottom_toBottomOf="@+id/navigate_layout"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
